@@ -25,7 +25,7 @@ class Cnpj extends AbstractHelper
         $cnpjMask .= substr($cnpj, 5, 3) . '/';
         $cnpjMask .= substr($cnpj, 8, 4) . '-';
         $cnpjMask .= substr($cnpj, 12, 2);
-        
+
         return $cnpjMask;
     }
 

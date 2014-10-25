@@ -25,7 +25,7 @@ class Cpf extends AbstractValidator
      * getMessages() will return an array of messages that explain why the
      * validation failed.
      *
-     * @param  mixed $value
+     * @param  mixed                      $value
      * @return boolean
      * @throws Exception\RuntimeException If validation of $value is impossible
      */
@@ -34,11 +34,13 @@ class Cpf extends AbstractValidator
         $cpf = $this->trim($value);
         if (!$this->respectsRegularExpression($cpf)) {
             $this->error(self::INVALID);
+
             return false;
         }
 
         if (!$this->applyingCpfRules($cpf)) {
             $this->error(self::INVALID);
+
             return false;
         }
 

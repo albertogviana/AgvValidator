@@ -2,9 +2,6 @@
 
 namespace AgvValidator\Validator;
 
-use Core\Test\TestCase;
-use AgvValidator\Validator\Cpf;
-
 /**
  * @group Validator
  */
@@ -16,7 +13,7 @@ class CpfTest extends \PHPUnit_Framework_TestCase
         $validator = new Cpf();
         $this->assertFalse($validator->isValid('111.111.111-11'));
     }
-    
+
     public function testInvalidWithoutSeparate()
     {
         $validator = new Cpf();
@@ -28,7 +25,7 @@ class CpfTest extends \PHPUnit_Framework_TestCase
         $validator = new Cpf();
         $this->assertTrue($validator->isValid('834.116.712-38'));
     }
-    
+
     public function testValidCnpjWithoutSeparate()
     {
         $validator = new Cpf();
