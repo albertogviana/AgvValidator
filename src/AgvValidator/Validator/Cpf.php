@@ -6,7 +6,6 @@ use Zend\Validator\AbstractValidator;
 
 class Cpf extends AbstractValidator
 {
-
     const INVALID = 'cpfInvalid';
 
     /**
@@ -119,5 +118,4 @@ class Cpf extends AbstractValidator
 
         return true;
     }
-
 }

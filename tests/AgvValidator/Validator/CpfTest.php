@@ -7,7 +7,6 @@ namespace AgvValidator\Validator;
  */
 class CpfTest extends \PHPUnit_Framework_TestCase
 {
-
     public function testInvalid()
     {
         $validator = new Cpf();
@@ -31,5 +30,4 @@ class CpfTest extends \PHPUnit_Framework_TestCase
         $validator = new Cpf();
         $this->assertTrue($validator->isValid('83411671238'));
     }
-
 }

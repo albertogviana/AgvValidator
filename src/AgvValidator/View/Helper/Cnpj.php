@@ -11,7 +11,6 @@ use Zend\View\Helper\AbstractHelper;
  */
 class Cnpj extends AbstractHelper
 {
-
     public function __invoke($cnpj)
     {
         $cnpj = preg_replace('/[^0-9]/', '', trim($cnpj));
@@ -28,5 +27,4 @@ class Cnpj extends AbstractHelper
 
         return $cnpjMask;
     }
-
 }

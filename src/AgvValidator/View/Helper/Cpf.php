@@ -11,7 +11,6 @@ use Zend\View\Helper\AbstractHelper;
  */
 class Cpf extends AbstractHelper
 {
-
     public function __invoke($cpf)
     {
         $cpf = preg_replace('/[^0-9]/', '', trim($cpf));
@@ -26,5 +25,4 @@ class Cpf extends AbstractHelper
 
         return $cpfMask;
     }
-
 }

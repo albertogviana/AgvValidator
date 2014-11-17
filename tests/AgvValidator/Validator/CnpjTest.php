@@ -7,7 +7,6 @@ namespace AgvValidator\Validator;
  */
 class CnpjTest extends \PHPUnit_Framework_TestCase
 {
-
     public function testInvalid()
     {
         $validator = new Cnpj();
@@ -31,5 +30,4 @@ class CnpjTest extends \PHPUnit_Framework_TestCase
         $validator = new Cnpj();
         $this->assertTrue($validator->isValid('96268838000130'));
     }
-
 }

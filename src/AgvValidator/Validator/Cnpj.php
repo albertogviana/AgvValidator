@@ -35,7 +35,6 @@ class Cnpj extends AbstractValidator
             $this->error(self::INVALID);
 
             return false;
-
         } else {
             $x = strlen($cnpj) - 2;
             if ($this->applyingCnpjRules($cnpj, $x) == 1) {

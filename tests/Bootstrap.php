@@ -28,7 +28,7 @@ class Bootstrap
         if (file_exists(dirname(__DIR__).'/../../config/test.db.config.php')) {
             $testConfig['module_listener_options']['config_static_paths'] = array(
                 //$dbConfig
-                dirname(__DIR__).'/../../config/test.db.config.php'
+                dirname(__DIR__).'/../../config/test.db.config.php',
             );
         }
 
